@@ -1,0 +1,158 @@
+:root {
+  --accent-color: #404bbf;
+  --main-title-color: #ffffff;
+  --title-color: #2e2f42;
+  --text-color: #434455;
+  --background-color: #ffffff;
+  --second-accent-color: #4d5ae5;
+  --footer-filter-color: #f4f4fd;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  font-size: 16px;
+}
+
+/* Header */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+
+.web {
+  color: var(--second-accent-color);
+}
+
+.menu-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+.menu-link.active {
+  color: var(--accent-color);
+}
+.contact-mail,
+.contact-phone-number {
+  font-style: normal;
+  color: var(--text-color);
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+  color: var(--accent-color);
+}
+.contact-phone-number:hover,
+.contact-phone-number:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background: var(--title-color);
+}
+.main-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+
+/* Buttons */
+.modal-btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+}
+
+.order {
+  color: var(--main-title-color);
+  background-color: var(--second-accent-color);
+}
+
+.order:hover,
+.order:focus {
+  background-color: var(--accent-color);
+}
+
+.filter {
+  color: var(--second-accent-color);
+  background: var(--footer-filter-color);
+}
+
+.filter:hover,
+.filter:focus {
+  color: var(--background-color);
+  background: var(--accent-color);
+}
+
+/* Next sections elements */
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-color);
+}
+.features-title {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.features-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+/* Footer */
+.footer-text {
+  color: var(--footer-filter-color);
+}
+
+.footer-bg {
+  background: var(--title-color);
+}
+.studio {
+  color: var(--footer-filter-color);
+}
