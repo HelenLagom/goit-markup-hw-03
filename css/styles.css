@@ -159,8 +159,6 @@ button {
   color: var(--main-title-color);
 }
 
-/* Buttons */
-
 .hero-btn {
   min-width: 169px;
   padding: 16px 32px;
@@ -173,21 +171,6 @@ button {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--accent-color);
-}
-
-.filter {
-  min-width: 116px;
-  padding: 11px 23px;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  color: var(--second-accent-color);
-  background: var(--footer-filter-color);
-}
-
-.filter:hover,
-.filter:focus {
-  color: var(--background-color);
-  background: var(--accent-color);
 }
 
 /*  sections title */
@@ -295,6 +278,62 @@ button {
   background-color: var(--background-color);
 }
 
+/* Works */
+.works {
+  width: 1440px;
+}
+.works-wrapper {
+  padding-top: 96px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.project-filter {
+  min-width: 586px;
+  margin: 0 auto 72px;
+  display: flex;
+}
+.filter {
+  padding: 11px 23px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--second-accent-color);
+  background: var(--footer-filter-color);
+}
+.btn:not(:last-child) {
+  margin-right: 24px;
+}
+
+.filter:hover,
+.filter:focus {
+  color: var(--background-color);
+  background: var(--accent-color);
+}
+.projects-list {
+  display: flex;
+  width: 1128px;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.project {
+  min-width: 360px;
+  display: flex;
+  border: 1px solid var(--border-color);
+  flex-direction: column;
+  align-content: flex-start;
+  flex-basis: calc((100% - 48px) / 3);
+}
+/* .project:not(:last-child) {
+  margin-right: 24px;
+} */
+.description {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: start;
+}
 /* Footer */
 .footer-text {
   width: 264px;
